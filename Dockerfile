@@ -39,4 +39,4 @@ RUN composer install --no-dev --optimize-autoloader
 # Fichua port ya Apache
 EXPOSE 80
 
-CMD ["apache2-foregrond"]
+CMD ["apache2-foreground"]
