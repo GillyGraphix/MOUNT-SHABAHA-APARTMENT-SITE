@@ -30,7 +30,7 @@ RUN a2enmod rewrite
 # Copia mafaili ya mradi wako kwenda kwenye server
 COPY . /var/www/html
 
-# Weka ruhusa (permissions) sahihi kwenye folder la storage, bootstrap, na database
+# Weka ruhusa na tengeneza sqlite database
 RUN mkdir -p /var/www/html/database && touch /var/www/html/database/database.sqlite && chmod -R 777 /var/www/html/database
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database
 
