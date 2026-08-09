@@ -1,6 +1,6 @@
 FROM php:8.2-apache
 
-# Weka dependencies muhimu za mfumo
+# Weka dependencies muhimu za mfumo na Node/NPM kwa ajili ya Vite
 RUN apt-get update && apt-get install -y \
     git \
     curl \
@@ -8,7 +8,9 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     zip \
-    unzip
+    unzip \
+    nodejs \
+    npm
 
 # Safisha cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
@@ -34,8 +36,11 @@ COPY . /var/www/html
 RUN mkdir -p /var/www/html/database && touch /var/www/html/database/database.sqlite && chmod -R 777 /var/www/html/database
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database
 
-# Install dependencies za Laravel
+# Install dependencies za PHP (Composer)
 RUN composer install --no-dev --optimize-autoloader
+
+# Install dependencies za Node na ujenge Vite manifest
+RUN npm install && npm run build
 
 # Fichua port ya Apache
 EXPOSE 80
