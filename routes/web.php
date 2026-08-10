@@ -2,14 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Http;
 
 // Route ya kufungua website
 Route::get('/', function () {
     return view('welcome');
 });
 
-// Route ya kupokea form na kutuma Email
+// Route ya kupokea form na kutuma Email kupitia RESEND API
 Route::post('/submit-booking', function (Request $request) {
     // 1. Validate form inputs
     $data = $request->validate([
@@ -33,12 +33,17 @@ Route::post('/submit-booking', function (Request $request) {
     $messageBody .= "Selected Space: " . ucfirst($data['space']) . "\n\n";
     $messageBody .= "Please reach out to the guest as soon as possible to confirm their stay.";
 
-    // 3. Send Email
-    Mail::raw($messageBody, function ($mail) use ($data) {
-        $mail->to('booking.mtshabahaapartment@gmail.com')
-             ->subject('New Booking Request from: ' . $data['name'])
-             ->replyTo($data['email']); 
-    });
+    // 3. Tuma Email kupitia Resend API
+    $response = Http::withHeaders([
+        'Authorization' => 'Bearer ' . env('RESEND_API_KEY'),
+        'Content-Type' => 'application/json',
+    ])->post('https://api.resend.com/emails', [
+        'from' => 'onboarding@resend.dev',
+        'to' => ['booking.mtshabahaapartment@gmail.com'],
+        'subject' => 'New Booking Request from: ' . $data['name'],
+        'text' => $messageBody,
+        'reply_to' => $data['email']
+    ]);
 
     // 4. Redirect back with success message
     return back()->with('success', 'Thank you! Your booking request has been successfully sent. Our team will contact you shortly.');
