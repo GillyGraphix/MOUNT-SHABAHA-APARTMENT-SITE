@@ -45,6 +45,9 @@ RUN composer install --no-dev --optimize-autoloader
 # Install dependencies za Node na ujenge Vite manifest (HAPA NDIPO CSS INATENGENEZWA)
 RUN npm install && npm run build
 
+# Endesha migrations ili kutengeneza tables za database (kama cache, nk)
+RUN php artisan migrate --force
+
 # Safisha cache za Laravel ili zisome configuration mpya za Mail na APP
 RUN php artisan config:clear \
     && php artisan cache:clear \
