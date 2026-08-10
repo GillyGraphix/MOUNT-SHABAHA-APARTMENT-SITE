@@ -12,7 +12,7 @@
                 <div class="h-1 w-16 bg-[#00B7B5] mb-8"></div>
                 
                 <p class="text-gray-500 dark:text-gray-400 mb-10 font-light leading-relaxed text-lg">
-                    Nestled in the serene environment of Boma Ng'ombe, Mount Shabaha Apartments offer the perfect middle ground. Whether you are catching a flight, heading for a safari in Arusha, or preparing to conquer Mount Kilimanjaro in Moshi, everything is just a short, scenic drive away.
+                    Nestled in the serene environment of Boma Ng'ombe, Mount Shabaha Apartment offer the perfect middle ground. Whether you are catching a flight, heading for a safari in Arusha, or preparing to conquer Mount Kilimanjaro in Moshi, everything is just a short, scenic drive away.
                 </p>
 
                 <div class="space-y-4">

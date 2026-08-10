@@ -22,7 +22,7 @@
             <div class="h-1 w-20 bg-[#00B7B5] mb-8"></div>
 
             <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm md:text-base">
-                Nestled in the serene and strategic landscapes of Boma Ng'ombe, Mt Shabaha Apartments redefines contemporary living. We blend modern architectural elegance with the breathtaking natural beauty of the Kilimanjaro region, creating an exclusive oasis for our guests.
+                Nestled in the serene and strategic landscapes of Boma Ng'ombe, Mt Shabaha Apartment redefines contemporary living. We blend modern architectural elegance with the breathtaking natural beauty of the Kilimanjaro region, creating an exclusive oasis for our guests.
             </p>
 
             <p class="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-sm md:text-base">

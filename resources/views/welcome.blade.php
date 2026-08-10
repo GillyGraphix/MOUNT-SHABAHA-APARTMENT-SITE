@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Mount Shabaha Apartment | Luxury Stays in Boma Ng'ombe, Kilimanjaro</title>
-    <meta name="description" content="Experience ultimate luxury and privacy at Mount Shabaha Apartments in Boma Ng'ombe. Perfectly situated near Kilimanjaro International Airport (KIA), Moshi, and Arusha. Book your exclusive stay today.">
-    <meta name="keywords" content="luxury apartments kilimanjaro, serviced apartments boma ng'ombe, accommodation near KIA, hotels near kilimanjaro airport, mount shabaha apartments, airbnb moshi arusha, kilimanjaro places to stay">
-    <meta name="author" content="Mount Shabaha Apartments">
+    <meta name="description" content="Experience ultimate luxury and privacy at Mount Shabaha Apartment in Boma Ng'ombe. Perfectly situated near Kilimanjaro International Airport (KIA), Moshi, and Arusha. Book your exclusive stay today.">
+    <meta name="keywords" content="luxury apartment kilimanjaro, serviced apartment boma ng'ombe, accommodation near KIA, hotels near kilimanjaro airport, mount shabaha apartment, airbnb moshi arusha, kilimanjaro places to stay">
+    <meta name="author" content="Mount Shabaha Apartment">
     <meta name="robots" content="index, follow">
 
     <!-- Favicon (Picha ya kwenye tab ya juu) -->
@@ -16,7 +16,7 @@
     <!-- Open Graph (WhatsApp / Facebook Preview) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mount-shabaha-apartment.onrender.com/"> 
-    <meta property="og:title" content="Mount Shabaha Apartments | Luxury Stays in Kilimanjaro">
+    <meta property="og:title" content="Mount Shabaha Apartment | Luxury Stays in Kilimanjaro">
     <meta property="og:description" content="Exclusive and spacious serviced apartment in Boma Ng'ombe. Minutes away from KIA,Moshi, and Arusha.">
     <!-- Picha ya Link Preview imewekwa hapa -->
     <meta property="og:image" content="{{ url('assets/images/link-preview.jpg') }}"> 
@@ -24,7 +24,7 @@
     <!-- Twitter Preview -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mount Shabaha Apartment | Luxury Stays">
-    <meta name="twitter:description" content="Exclusive serviced apartments in Boma Ng'ombe, Kilimanjaro.">
+    <meta name="twitter:description" content="Exclusive serviced apartment in Boma Ng'ombe, Kilimanjaro.">
     <!-- Picha ya Link Preview imewekwa hapa pia -->
     <meta name="twitter:image" content="{{ url('assets/images/link-preview.jpg') }}">
 
