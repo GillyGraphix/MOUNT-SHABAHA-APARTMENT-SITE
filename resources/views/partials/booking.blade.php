@@ -37,7 +37,10 @@
         <div class="md:w-3/5 p-12 relative z-10">
             <h4 class="text-2xl font-bold text-[#005461] dark:text-white mb-8 transition-colors">Booking Request</h4>
             
-            <form action="#" method="POST" class="space-y-6">
+            <!-- FOMU IMEONGEZEWA ACTION NA CSRF TOKEN KWA AJILI YA KUTUMA EMAIL -->
+            <form action="{{ route('booking.submit') }}" method="POST" class="space-y-6">
+                @csrf
+                
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">Full Name <span class="text-red-500">*</span></label>

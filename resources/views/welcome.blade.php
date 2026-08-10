@@ -42,6 +42,29 @@
 
 <body x-cloak class="bg-[#F4F4F4] dark:bg-[#001D21] text-[#005461] dark:text-gray-200 font-sans antialiased transition-colors duration-500 overflow-x-hidden">
 
+    <!-- Ujumbe wa Pongezi (Success Alert) Utaonekana hapa kama email imetumwa -->
+    @if(session('success'))
+        <div x-data="{ show: true }" 
+             x-show="show" 
+             x-init="setTimeout(() => show = false, 5000)"
+             class="fixed top-24 right-6 z-[100] bg-green-500 text-white px-6 py-4 rounded shadow-2xl flex items-center gap-4"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 translate-x-10"
+             x-transition:enter-end="opacity-100 translate-x-0"
+             x-transition:leave="transition ease-in duration-300"
+             x-transition:leave-start="opacity-100 translate-x-0"
+             x-transition:leave-end="opacity-0 translate-x-10">
+            <i class="fa-solid fa-check-circle text-2xl"></i>
+            <div>
+                <h4 class="font-bold text-sm uppercase tracking-wider">Success</h4>
+                <p class="text-sm font-light">{{ session('success') }}</p>
+            </div>
+            <button @click="show = false" class="text-white hover:text-gray-200 ml-2 focus:outline-none">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+    @endif
+
     @include('partials.preloader')
     
     @include('partials.navbar')
