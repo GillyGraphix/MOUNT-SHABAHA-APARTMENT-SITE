@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    <!-- Alpine Plugins & Core (Hakikisha kama unatumia Vite ku-import Alpine, hizi za CDN unaweza kuzitoa au unaweza kuacha hizi kama hutumii Vite kwa ajili ya Alpine) -->
+    <!-- Alpine Plugins & Core -->
     <script defer src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
@@ -84,6 +84,7 @@
 
     @include('partials.footer')
 
+    <!-- Kitufe cha Scroll to Top kilichosawazishwa -->
     <button 
         x-data="{ show: false }" 
         @scroll.window="show = window.pageYOffset > 500" 
@@ -95,8 +96,10 @@
         x-transition:leave="transition ease-in duration-300"
         x-transition:leave-start="opacity-100 translate-y-0"
         x-transition:leave-end="opacity-0 translate-y-10"
-        class="fixed bottom-24 right-6 bg-[#005461] dark:bg-[#00B7B5] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-all duration-300 z-50 border-2 border-transparent dark:border-white/20">
-        <button type="button" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+        type="button" 
+        aria-label="Scroll to top"
+        class="fixed bottom-24 right-6 bg-[#005461] dark:bg-[#00B7B5] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-all duration-300 z-50 border-2 border-white/25">
+        <i class="fa-solid fa-arrow-up text-white"></i>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

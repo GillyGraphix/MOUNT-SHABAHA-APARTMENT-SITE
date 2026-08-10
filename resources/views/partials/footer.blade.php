@@ -10,7 +10,7 @@
     <!-- === YALIYOMO NDANI YA FOOTER === -->
     <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
         
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 border-b border-white/10 pb-16">
             
             <!-- 1. Brand Info -->
             <div class="md:col-span-1">
@@ -20,20 +20,6 @@
                 <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
                     Where unparalleled luxury meets the majestic tranquility of Kilimanjaro. Your premium escape in Boma Ng'ombe begins here.
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#00B7B5] hover:border-[#00B7B5] hover:text-[#001217] transition-all duration-300 transform hover:-translate-y-1">
-                        <i class="fa-brands fa-instagram text-sm"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#00B7B5] hover:border-[#00B7B5] hover:text-[#001217] transition-all duration-300 transform hover:-translate-y-1">
-                        <i class="fa-brands fa-facebook-f text-sm"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#00B7B5] hover:border-[#00B7B5] hover:text-[#001217] transition-all duration-300 transform hover:-translate-y-1">
-                        <i class="fa-brands fa-x-twitter text-sm"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-[#00B7B5] hover:border-[#00B7B5] hover:text-[#001217] transition-all duration-300 transform hover:-translate-y-1">
-                        <i class="fa-brands fa-tripadvisor text-sm"></i>
-                    </a>
-                </div>
             </div>
 
             <!-- 2. Quick Links -->
@@ -50,12 +36,15 @@
                 </ul>
             </div>
 
-            <!-- 3. Contact Info -->
+            <!-- 3. Contact Info & Welcome Message -->
             <div class="md:col-span-1">
                 <h4 class="text-white font-bold tracking-widest uppercase text-xs mb-6 relative inline-block">
-                    Contact Us
+                    Contact & Welcome
                     <span class="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-[#00B7B5]"></span>
                 </h4>
+                <p class="text-gray-400 text-sm font-light mb-6 leading-relaxed">
+                    Welcome to Mount Shabaha. We invite you to experience exceptional luxury and comfort right beneath the majestic Mount Kilimanjaro. Get in touch with us today!
+                </p>
                 <ul class="space-y-4 text-sm font-light text-gray-400">
                     <li class="flex items-start space-x-3">
                         <i class="fa-solid fa-location-dot text-[#00B7B5] mt-1"></i>
@@ -67,36 +56,15 @@
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fa-solid fa-envelope text-[#00B7B5]"></i>
-                        <!-- Pande hili nimeweka ?subject= ili kuleta kichwa cha habari kiotomatiki -->
                         <a href="mailto:booking.mtshabahaapartment@gmail.com?subject=Inquiry:%20Mount%20Shabaha%20Apartment" class="hover:text-white transition-colors">booking.mtshabahaapartment@gmail.com</a>
                     </li>
                 </ul>
-            </div>
-
-            <!-- 4. Newsletter -->
-            <div class="md:col-span-1">
-                <h4 class="text-white font-bold tracking-widest uppercase text-xs mb-6 relative inline-block">
-                    Newsletter
-                    <span class="absolute -bottom-2 left-0 w-1/2 h-0.5 bg-[#00B7B5]"></span>
-                </h4>
-                <p class="text-gray-400 text-sm font-light mb-4">Subscribe to receive exclusive offers and updates.</p>
-                <form class="relative flex items-center">
-                    <input type="email" placeholder="Your email address" class="w-full bg-white/5 border border-white/20 rounded-full py-3 px-6 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-[#00B7B5] transition-colors">
-                    <button type="submit" class="absolute right-1 top-1 bottom-1 bg-[#00B7B5] text-[#001217] w-10 h-10 rounded-full flex items-center justify-center hover:bg-white transition-colors">
-                        <i class="fa-solid fa-paper-plane text-sm"></i>
-                    </button>
-                </form>
             </div>
             
         </div>
 
         <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-light">
             <p>&copy; 2026 Mount Shabaha Apartment. All Rights Reserved.</p>
-            <div class="flex space-x-4 mt-4 md:mt-0">
-                <a href="#" class="hover:text-[#00B7B5] transition-colors">Privacy Policy</a>
-                <span class="opacity-30">|</span>
-                <a href="#" class="hover:text-[#00B7B5] transition-colors">Terms of Service</a>
-            </div>
         </div>
 
     </div>
@@ -121,7 +89,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', () => {
         
-        // SCRIPT MPYA YA NYOTA (Imesawazishwa bila kusumbua Scroll ya simu)
+        // SCRIPT YA NYOTA (Imesawazishwa bila kusumbua Scroll ya simu)
         const container = document.getElementById('star-container');
         if (!container) return;
         container.innerHTML = '';
