@@ -45,6 +45,12 @@ RUN composer install --no-dev --optimize-autoloader
 # Install dependencies za Node na ujenge Vite manifest (HAPA NDIPO CSS INATENGENEZWA)
 RUN npm install && npm run build
 
+# Safisha cache za Laravel ili zisome configuration mpya za Mail na APP
+RUN php artisan config:clear \
+    && php artisan cache:clear \
+    && php artisan route:clear \
+    && php artisan view:clear
+
 # Weka ruhusa sahihi BAADA ya build, ili kuhakikisha folder la public/build linasomeka na Apache
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database /var/www/html/public/build
 

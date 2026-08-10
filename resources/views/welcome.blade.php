@@ -17,15 +17,13 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mount-shabaha-apartment.onrender.com/"> 
     <meta property="og:title" content="Mount Shabaha Apartment | Luxury Stays in Kilimanjaro">
-    <meta property="og:description" content="Exclusive and spacious serviced apartment in Boma Ng'ombe. Minutes away from KIA,Moshi, and Arusha.">
-    <!-- Picha ya Link Preview imewekwa hapa -->
+    <meta property="og:description" content="Exclusive and spacious serviced apartment in Boma Ng'ombe. Minutes away from KIA, Moshi, and Arusha.">
     <meta property="og:image" content="{{ url('assets/images/link-preview.jpg') }}"> 
 
     <!-- Twitter Preview -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mount Shabaha Apartment | Luxury Stays">
     <meta name="twitter:description" content="Exclusive serviced apartment in Boma Ng'ombe, Kilimanjaro.">
-    <!-- Picha ya Link Preview imewekwa hapa pia -->
     <meta name="twitter:image" content="{{ url('assets/images/link-preview.jpg') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -34,13 +32,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+    <!-- Alpine Plugins & Core (Hakikisha kama unatumia Vite ku-import Alpine, hizi za CDN unaweza kuzitoa au unaweza kuacha hizi kama hutumii Vite kwa ajili ya Alpine) -->
     <script defer src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
     <style> [x-cloak] { display: none !important; } </style>
 </head>
 
-<body x-cloak class="bg-[#F4F4F4] dark:bg-[#001D21] text-[#005461] dark:text-gray-200 font-sans antialiased transition-colors duration-500 overflow-x-hidden">
+<body class="bg-[#F4F4F4] dark:bg-[#001D21] text-[#005461] dark:text-gray-200 font-sans antialiased transition-colors duration-500 overflow-x-hidden">
 
     <!-- Ujumbe wa Pongezi (Success Alert) Utaonekana hapa kama email imetumwa -->
     @if(session('success'))
@@ -97,11 +96,14 @@
         x-transition:leave-start="opacity-100 translate-y-0"
         x-transition:leave-end="opacity-0 translate-y-10"
         class="fixed bottom-24 right-6 bg-[#005461] dark:bg-[#00B7B5] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-2xl hover:scale-110 transition-all duration-300 z-50 border-2 border-transparent dark:border-white/20">
-        <i class="fa-solid fa-arrow-up"></i>
+        <button type="button" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
