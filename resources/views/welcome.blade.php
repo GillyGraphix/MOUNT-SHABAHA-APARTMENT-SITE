@@ -10,15 +10,23 @@
     <meta name="author" content="Mount Shabaha Apartments">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.mountshabaha.co.tz/"> <meta property="og:title" content="Mount Shabaha Apartments | Luxury Stays in Kilimanjaro">
-    <meta property="og:description" content="Exclusive and spacious serviced apartments in Boma Ng'ombe. Minutes away from KIA, Moshi, and Arusha.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200"> 
+    <!-- Favicon (Picha ya kwenye tab ya juu) -->
+    <link rel="icon" type="image/png" href="{{ asset('assets/images/favicon.png') }}">
 
+    <!-- Open Graph (WhatsApp / Facebook Preview) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mountshabaha.co.tz/"> 
+    <meta property="og:title" content="Mount Shabaha Apartments | Luxury Stays in Kilimanjaro">
+    <meta property="og:description" content="Exclusive and spacious serviced apartments in Boma Ng'ombe. Minutes away from KIA, Moshi, and Arusha.">
+    <!-- Picha ya Link Preview imewekwa hapa -->
+    <meta property="og:image" content="{{ url('assets/images/link-preview.jpg') }}"> 
+
+    <!-- Twitter Preview -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Mount Shabaha Apartments | Luxury Stays">
     <meta name="twitter:description" content="Exclusive serviced apartments in Boma Ng'ombe, Kilimanjaro.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200">
+    <!-- Picha ya Link Preview imewekwa hapa pia -->
+    <meta name="twitter:image" content="{{ url('assets/images/link-preview.jpg') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     

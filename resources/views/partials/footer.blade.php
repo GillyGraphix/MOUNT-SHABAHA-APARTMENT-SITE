@@ -15,7 +15,7 @@
             <!-- 1. Brand Info -->
             <div class="md:col-span-1">
                 <h2 class="text-3xl font-black uppercase tracking-widest text-white mb-4">
-                    Mount Shabaha<span class="text-[#00B7B5]"></span> <span class="text-[#00B7B5]">Apartment.</span></h1>
+                    Mount Shabaha<span class="text-[#00B7B5]"></span> <span class="text-[#00B7B5]">Apartment.</span>
                 </h2>
                 <p class="text-gray-400 text-sm leading-relaxed mb-6 font-light">
                     Where unparalleled luxury meets the majestic tranquility of Kilimanjaro. Your premium escape in Boma Ng'ombe begins here.
@@ -63,11 +63,12 @@
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fa-solid fa-phone text-[#00B7B5]"></i>
-                        <a href="tel:+255123456789" class="hover:text-white transition-colors">+255 123 456 789</a>
+                        <a href="tel:+255 672 454 057" class="hover:text-white transition-colors">+255 672 454 057</a>
                     </li>
                     <li class="flex items-center space-x-3">
                         <i class="fa-solid fa-envelope text-[#00B7B5]"></i>
-                        <a href="mailto:booking@mountshabaha.com" class="hover:text-white transition-colors">info@mountshabaha.com</a>
+                        <!-- Pande hili nimeweka ?subject= ili kuleta kichwa cha habari kiotomatiki -->
+                        <a href="mailto:booking.mtshabahaapartment@gmail.com?subject=Inquiry:%20Mount%20Shabaha%20Apartment" class="hover:text-white transition-colors">booking.mtshabahaapartment@gmail.com</a>
                     </li>
                 </ul>
             </div>

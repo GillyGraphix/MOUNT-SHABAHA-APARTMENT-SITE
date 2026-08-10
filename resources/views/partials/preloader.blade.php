@@ -1,12 +1,9 @@
 <div id="preloader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white transition-opacity duration-700">
     <div class="mb-8 animate-pulse">
-        <svg class="w-16 h-16 text-[#005461]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-            <path d="M2 17l10 5 10-5"></path>
-            <path d="M2 12l10 5 10-5"></path>
-        </svg>
+        <!-- Hapa nimeongeza ukubwa uwe mkubwa zaidi (w-80 / w-96) ili iwe kubwa kuliko line ya chini -->
+        <img src="assets/images/preloader.png" alt="Loading..." class="w-80 md:w-96 h-auto object-contain">
     </div>
-    <div class="w-48 h-1 bg-gray-100 rounded-full overflow-hidden">
+    <div class="w-64 h-1.5 bg-gray-100 rounded-full overflow-hidden">
         <div id="progress-bar" class="h-full bg-[#00B7B5] w-0 transition-all duration-300 ease-linear"></div>
     </div>
 </div>

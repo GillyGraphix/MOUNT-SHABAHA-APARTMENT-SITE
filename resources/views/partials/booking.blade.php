@@ -19,15 +19,15 @@
                 <div class="space-y-6">
                     <div class="flex items-center space-x-4">
                         <i class="fa-solid fa-phone text-[#00B7B5] text-xl"></i>
-                        <span class="font-light">+255 123 456 789</span>
+                        <span class="font-light">+255 672 454 057</span>
                     </div>
                     <div class="flex items-center space-x-4">
                         <i class="fa-solid fa-envelope text-[#00B7B5] text-xl"></i>
-                        <span class="font-light">booking@mountshabaha.com</span>
+                        <span class="font-light">booking.mtshabahaapartment@gmail.com</span>
                     </div>
                     <div class="flex items-center space-x-4">
                         <i class="fa-solid fa-map-location-dot text-[#00B7B5] text-xl"></i>
-                        <span class="font-light">Kigongoni, Mto wa Mbu – Arusha</span>
+                        <span class="font-light">Boma ng'ombe,Kilimanjaro-Tanzania</span>
                     </div>
                 </div>
             </div>
@@ -41,11 +41,11 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">Full Name <span class="text-red-500">*</span></label>
-                        <input type="text" name="name" class="w-full border-b-2 border-gray-200 dark:border-gray-600 py-2 focus:outline-none focus:border-[#018790] transition text-[#005461] dark:text-gray-200 bg-transparent placeholder-gray-400" placeholder="John Doe" required>
+                        <input type="text" name="name" class="w-full border-b-2 border-gray-200 dark:border-gray-600 py-2 focus:outline-none focus:border-[#018790] transition text-[#005461] dark:text-gray-200 bg-transparent placeholder-gray-400" placeholder="Nice One" required>
                     </div>
                     <div>
                         <label class="block text-xs uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-2">Email Address <span class="text-red-500">*</span></label>
-                        <input type="email" name="email" class="w-full border-b-2 border-gray-200 dark:border-gray-600 py-2 focus:outline-none focus:border-[#018790] transition text-[#005461] dark:text-gray-200 bg-transparent placeholder-gray-400" placeholder="john@example.com" required>
+                        <input type="email" name="email" class="w-full border-b-2 border-gray-200 dark:border-gray-600 py-2 focus:outline-none focus:border-[#018790] transition text-[#005461] dark:text-gray-200 bg-transparent placeholder-gray-400" placeholder="Nice@gmail.com" required>
                     </div>
                 </div>
 
