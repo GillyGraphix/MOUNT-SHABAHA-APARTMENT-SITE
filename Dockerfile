@@ -28,6 +28,10 @@ ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
+# === DAWA YA 404: Ruhusu Apache isome faili la .htaccess la Laravel ===
+RUN echo "<Directory ${APACHE_DOCUMENT_ROOT}>\n\tAllowOverride All\n</Directory>" >> /etc/apache2/apache2.conf
+# =======================================================================
+
 # Ruhusu Apache rewrite module
 RUN a2enmod rewrite
 
